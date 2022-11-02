@@ -1,0 +1,353 @@
+:root {
+    --yellow: #EAC926;
+    --dark-blue: #03264C;
+    --light-blue: #1259c3;
+    --gray: #666666;
+    --light-gray: #ebebeb;
+    --green: #39b54a;
+    --base-font-family: 'Roboto', sans-serif
+  }
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "roboto";
+    list-style: none;
+}
+
+header {
+    background-color: #EAC926;
+}
+
+.unir {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.logo {
+    width: 50%;
+    padding: 5px
+}
+
+.buscador {
+    color: gray;
+    width: 90%;
+    height: 50%;
+    margin-top: 8px;
+    margin-left: 5px;
+}
+
+nav {
+    display: none;
+}
+
+li {
+    margin: 5px;
+}
+
+.burger-menu i{
+    color: var(--light-gray);
+    background-color: #1259c3;
+    padding: 8px;
+    margin: auto;
+    border-radius: 4px;
+}
+
+.burger-menu{
+    text-align: center;
+    padding-bottom: 12px;
+}
+
+
+main {
+    background-color: var(--light-gray);
+    width: 90%;
+    margin: auto;
+    padding-top: 10px;
+}
+
+.titular {
+    font-size: 24px ;
+    text-align: center;
+    color: #666666;
+}
+
+.imagen {
+    width: 100%;
+}
+
+.section {
+    padding: 10px
+}
+
+.card {
+    width: 100%;
+    margin:auto;
+   
+   
+}
+
+.card2 {
+    border: solid 1px #ebebeb;
+    background-color: white;
+    padding: 10px;
+    position: relative;
+}
+
+.verde {
+    color:#39b54a
+}
+
+.camion {
+    color: green;
+    border: 1px solid green;
+    border-radius: 50%;
+    padding: 5px;
+    display: block;
+    position: absolute;
+    background-color: white;
+    font-size: 16px;
+    width: 30px;
+    height: 30px;
+    right: 20px;
+    top: -20px;
+}
+
+.precio {
+    font-size: 18px;
+    flex-grow: 0.3;
+}
+.descuento {
+    font-size: 16px;
+    flex-grow: 0.7;
+}
+.descripcion {
+    display: none;
+    font-size: 16px;
+}
+
+footer {
+    text-align: center;
+}
+
+.icono {
+    color: #1259c3;
+    font-size: 2em;
+    padding:10px
+}
+
+footer article i {
+    transition: 1s;
+ }
+
+footer article :hover i {
+   color: var(--green);
+}
+
+@media (min-width: 425px) {
+
+    .card:hover {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+    
+    .descripcion {
+    display:block;
+    visibility: hidden;
+    }
+
+    main section:hover .descripcion {
+        visibility: visible;
+    }
+
+    .logo {
+        width: 33%;
+        padding: 5px
+    }
+    
+    .buscador {
+        width: 60%;
+        height: 50%;
+        margin-left: 20px;
+        margin-top: 13px;
+        
+    }
+
+    .nav {
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .burger-menu {
+        display: none;
+    }
+
+    .productos {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .section {
+        width: 40%;
+    }
+
+    .unir {
+        display: flex;
+    }
+
+    .titulardt {
+        margin-top: 40px;
+        margin: auto
+    }
+
+
+}
+
+@media (min-width: 769px) {
+    
+    .productos {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .section {
+        width: 22%;
+    }
+
+    
+
+    footer{
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 5px
+    }
+    
+    footer article {
+        width: 31%;
+    }
+
+    .unir2 {
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .logo {
+        width: 40%;
+        padding: 5px
+    }
+    
+    .buscador {
+        width: 90%;
+        height: 70%;
+        margin-left: 10px;
+        margin-top: 8px;
+        
+    }
+
+    .titulardt {
+        margin-top: 15px;
+        margin: auto
+    }
+
+    .camion {
+        transition: transform 0.5s
+    }
+
+    .card:hover .camion{
+        transform: rotate(-45deg);
+    }
+
+
+
+}
+
+/* REGISTER */
+
+.register{
+    margin: auto;
+}
+
+.alinear {
+    text-align: center;
+}
+
+.intereses {
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 10px;
+    justify-content: center;
+}
+
+.checkbox {
+    margin: 5px
+}
+
+.boton {
+    text-align: center;
+    padding: 10px;
+}
+
+.boton2:hover {
+    background-color: #0b488a;
+}
+
+.boton2 {
+    text-decoration: none;
+    border-radius: 3px;
+    border: none;
+    padding: 10px;
+    text-decoration: none;
+    width: 60%;
+    background-color: #1259c3;
+
+}
+
+.btn-red {
+    color:white;
+    background-color: rgb(198, 61, 61)
+}
+
+.letrab {
+    color: white;
+    font-weight: 300px;
+}
+
+
+/* LOGIN */
+
+.login {
+    padding:10px;
+    text-align: center;
+}
+
+
+
+.logincase {
+    padding: 5px;
+    width: 60%;
+    text-align: left;
+ 
+}
+
+.btn {
+    border-radius: 3px;
+    display: inline-block;
+    padding: 10px;
+    text-decoration: none;
+    width: 60%;
+}
+
+.btn:hover {
+    background-color: #1458a0;
+}
+
+.btn-azul {
+    color:white;
+    background-color: #1259c3;
+}
+
+
