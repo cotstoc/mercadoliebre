@@ -42,6 +42,10 @@ nav {
     display: none;
 }
 
+.azul:hover {
+    color: #033974;
+}
+
 li {
     margin: 5px;
 }
